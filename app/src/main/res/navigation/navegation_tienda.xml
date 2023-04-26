@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegation_tienda"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="mx.tecnm.lapaz.tienda.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_productosFragment"
+            app:destination="@id/productosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productosFragment"
+        android:name="mx.tecnm.lapaz.tienda.ProductosFragment"
+        android:label="fragment_productos"
+        tools:layout="@layout/fragment_productos" >
+        <action
+            android:id="@+id/action_productosFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
+        <action
+            android:id="@+id/action_productosFragment_to_productoFragment"
+            app:destination="@id/productoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productoFragment"
+        android:name="mx.tecnm.lapaz.tienda.ProductoFragment"
+        android:label="fragment_producto"
+        tools:layout="@layout/fragment_producto" >
+        <argument
+            android:name="producto"
+            app:argType="mx.tecnm.lapaz.tienda.Producto" />
+    </fragment>
+    <fragment
+        android:id="@+id/carritoFragment"
+        android:name="mx.tecnm.lapaz.tienda.CarritoFragment"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" />
+</navigation>

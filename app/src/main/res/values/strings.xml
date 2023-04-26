@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tienda</string>
+    <string name="login">Iniciar sesion</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="cliente">Cliente</string>
+    <string name="carrito">Carrito</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
